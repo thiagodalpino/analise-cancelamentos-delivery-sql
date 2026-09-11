@@ -21,3 +21,16 @@ Identificar os principais fatores detratores que levam ao cancelamento de pedido
 ### **Recomendações de Negócio:**
 1. ** Filtro de Viabilidade Geográfica:** Implementar um bloqueio dinâmico no aplicativo para limitar pedidos onde o cliente está a mais de 15 km da loja, reduzindo a frustração do usuário e processamento ineficiente de alocação de frota.
 2. ** Taxa Dinâmica por Distância:** No caso de áreas mais distantes, cujo valor estratégico para expansão do negócio seja de grande relevância, a aplicação de um multiplicador no valor do frete para pedidos acima de 10 km, utilizando essa margem para subsidiar incentivos maiores aos entregadores que aceitarem a rota.
+
+---
+### **Resultados Obtidos via SQL**
+
+| Status do Pedido | Total de Pedidos | Tempo Média de Ciclo (min) | Distância Média (km) |
+| :--- | :--- | :--- | :--- |
+| **CANCELLED** | 7.253 | 35,07 | 59,17 |
+| **DELIVERING** | 223 | 163,08 | 3,24 |
+| **DELIVERED** | 371.367 | 168,70 | 9,77 |
+
+---
+### **Fonte dos Dados:**
+Delivery Center Dataset - Kaggle (Base de dados real referente a operações de e-commerce e delivery no Brasil).
